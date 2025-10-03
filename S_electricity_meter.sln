@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S_electricity_meter", "S_electricity_meter\S_electricity_meter.csproj", "{7DB187D3-2398-DC3B-0F3C-07483B3DE01D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DB187D3-2398-DC3B-0F3C-07483B3DE01D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB187D3-2398-DC3B-0F3C-07483B3DE01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB187D3-2398-DC3B-0F3C-07483B3DE01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB187D3-2398-DC3B-0F3C-07483B3DE01D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1D2DC64-3354-4F1E-8FC4-4C18A450B547}
+	EndGlobalSection
+EndGlobal
