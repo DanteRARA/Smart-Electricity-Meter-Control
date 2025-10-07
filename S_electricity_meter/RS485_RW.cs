@@ -54,7 +54,7 @@ public class RS485_RW
         Logger.Info($"Port: {port}");
         Logger.Info($"Baud Rate: {baud_rate}");
 
-        sp = new SerialPort(port, baud_rate, Parity.None, 8, StopBits.One);
+        sp = new SerialPort(port, baud_rate, Parity.None, 8, StopBits.Two);
         sp.DataReceived += DataReceivedHandler;
 
         try
@@ -67,6 +67,11 @@ public class RS485_RW
             Logger.Error($"{port} port is not opened!\n {ex.Message}");
         }
 
+    }
+
+    ~RS485_RW()
+    {
+        sp.Close(); 
     }
 
     private async void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)

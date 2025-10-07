@@ -11,10 +11,9 @@ namespace Smart_ele_meter
     {
         static async Task Main(string[] args)
         {
-            string hex = "01 03 00 00 00 02";
+            string hex = "01 03 00 14 00 02";
             var rs485_rw = new RS485_RW();
-            //byte[] data = rs485_rw.BuildRequest(hex);
-            //rs485_rw.RS485_Input(data);
+
             byte[] respVolt = await rs485_rw.SendAndWaitAsync(hex);
 
             float volt = rs485_rw.ParseFloat(respVolt, 3);
